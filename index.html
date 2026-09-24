@@ -2,17 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login with Discord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #36393f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+            background-color: #2f3136;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .discord-btn {
+            background-color: #5865F2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .discord-btn:hover {
+            background-color: #4752C4;
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 20vh;">
-        <h2>Mag-login gamit ang Discord</h2>
-        <!-- Tuturo ito sa Python backend sa Render -->
-        <a href="https://my-discord-backend.onrender.com/auth/discord">
-            <button style="background: #5865F2; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-                Login with Discord
-            </button>
-        </a>
+
+    <div class="login-box">
+        <h2>Mag-login sa Ating App</h2>
+        <p>I-connect ang iyong Discord account para magpatuloy.</p>
+        <!-- Naka-link na ngayon diretso sa PythonAnywhere API -->
+        <a href="http://aralosontop.pythonanywhere.com/auth/discord" class="discord-btn">Login with Discord</a>
     </div>
+
 </body>
 </html>
