@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1 id="welcome">Welcome!</h1>
+
+    <script>
+        // Kunin ang username mula sa URL query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('user');
+        
+        if (username) {
+            document.getElementById('welcome').innerText = `Welcome, ${username}!`;
+        } else {
+            document.getElementById('welcome').innerText = "Hindi nakapag-login nang maayos.";
+        }
+    </script>
+</body>
+</html>
